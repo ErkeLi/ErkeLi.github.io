@@ -3,45 +3,42 @@
 <head>
   <meta charset="utf-8">
   
+
   
   <title>Git的基本操作 | 明天打麻将</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-    <meta name="description" content="记录一下">
-  
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="讲了git的常用命令，并且后续会继续更新。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git的基本操作">
+<meta property="og:url" content="https://erkeli.github.io/2023/03/29/git-command/index.html">
+<meta property="og:site_name" content="明天打麻将">
+<meta property="og:description" content="讲了git的常用命令，并且后续会继续更新。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-29T13:05:53.000Z">
+<meta property="article:modified_time" content="2023-03-30T01:41:17.559Z">
+<meta property="article:author" content="李二科">
+<meta property="article:tag" content="git命令">
+<meta property="article:tag" content="基础命令">
+<meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="明天打麻将" type="application/atom+xml">
   
   
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.png">
   
   
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-    
-<link rel="stylesheet" href="/localshare/css/share.css">
-
-  
-  
-  
 <meta name="generator" content="Hexo 5.4.2"></head>
 
 <body>
   <div id="container">
     <div id="wrap">
       <header id="header">
+  <div id="banner"></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
@@ -51,86 +48,47 @@
     </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/."><i class="fa fa-home"></i> 首页</a>
+          <a class="main-nav-link" href="/">Home</a>
         
-          <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> 归档</a>
-        
-          <a class="main-nav-link" href="/about/"><i class="fa fa-user"></i> 关于</a>
-        
-          <a class="main-nav-link" href="/atom.xml"><i class="fa fa-rss"></i> 订阅</a>
+          <a class="main-nav-link" href="/archives">Archives</a>
         
       </nav>
-    </div>
-    <div id="search-form">
-      <div id="result-mask" class="hide"></div>
-      <label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label>
-      <div id="result-wrap" class="hide">
-        <div id="search-result"></div>
-      </div>
-      <div class="hide">
-        <template id="search-tpl">
-          <div class="item">
-            <a href="/{path}" title="{title}">
-              <div class="title">{title}</div>
-              <div class="time">{date}</div>
-              <div class="tags">{tags}</div>
-            </a>
-          </div>
-        </template>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://erkeli.github.io"></form>
       </div>
     </div>
   </div>
 </header>
-
       <div class="outer">
-        <section id="main"><article id="post-git-command" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-git-command" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2023/03/29/git-command/" class="article-date">
+  <time datetime="2023-03-29T13:05:53.000Z" itemprop="datePublished">2023-03-29</time>
+</a>
+    
+  </div>
   <div class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 class="p-name article-title" itemprop="headline name">
+    <h1 class="article-title" itemprop="name">
       Git的基本操作
     </h1>
   
 
-
       </header>
     
-    <div class="article-meta">
-      
-      <span class="article-date">
-  <i class="fa fa-date"></i>
-  <time class="dt-published" datetime="2023-03-29T13:05:53.000Z" itemprop="datePublished">2023年03月29日</time>
-</span>
-      
-      
-        <span class="article-views">
-  <i class="fa fa-views"></i>
-  <i id="busuanzi_container_page_pv">
-      <i id="busuanzi_value_page_pv"></i>
-  </i>
-</span>
-
-      
-      
-<a href="/2023/03/29/git-command/#comments" class="article-comment-link">
-  
-    
-    
-    
-    
-    
-  
-  <i class="fa fa-commt"></i>
-  留言
-</a>
-
-
-    </div>
-    <div class="e-content article-entry" itemprop="articleBody">
+    <div class="article-entry" itemprop="articleBody">
       
         <p>讲了git的常用命令，并且后续会继续更新。<span id="more"></span></p>
 <h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><p>移动打开到D盘,,ceshi<br>cd d:</p>
@@ -140,7 +98,7 @@
 <p>查看文件类容<br>cat readme.txt</p>
 <hr>
 <h2 id="配置信息"><a href="#配置信息" class="headerlink" title="配置信息"></a>配置信息</h2><p>将git和远程的github仓库相连接<br>git remote add origin <a target="_blank" rel="noopener" href="https://github.com/ErkeLi/testgit.git">https://github.com/ErkeLi/testgit.git</a></p>
-<p>配置仓库姓名和邮箱，最好一开始就配置<br>git config –global user.name “ErkeLi”<br>git config –global user.email “<a href="mailto:&#x54;&#89;&#x57;&#101;&#x6e;&#x31;&#57;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;">&#x54;&#89;&#x57;&#101;&#x6e;&#x31;&#57;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;</a>“</p>
+<p>配置仓库姓名和邮箱，最好一开始就配置<br>git config –global user.name “ErkeLi”<br>git config –global user.email “<a href="mailto:&#x54;&#89;&#x57;&#101;&#x6e;&#49;&#x39;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#x54;&#89;&#x57;&#101;&#x6e;&#49;&#x39;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a>“</p>
 <hr>
 <h2 id="文件上传与下载"><a href="#文件上传与下载" class="headerlink" title="文件上传与下载"></a>文件上传与下载</h2><p>将文件添加到缓存区<br>git add a.txt</p>
 <p>将文件上传，注意要加-m，不然会进入编译区<br>git commit -m  a.txt</p>
@@ -154,51 +112,22 @@
 <h3 id="克隆代码到本地"><a href="#克隆代码到本地" class="headerlink" title="克隆代码到本地"></a>克隆代码到本地</h3><p>从git上复制项目到本地<br>git clone  <a target="_blank" rel="noopener" href="https://github.com/chaooo/hexo-theme-BlueLake.git">https://github.com/chaooo/hexo-theme-BlueLake.git</a> </p>
 <p>从GitHub上下载代码，仓库的代码放到本地themes&#x2F;BlueLake下，上面的方式会吧代码放到hexo-theme-BlueLake文件夹下<br>$ git clone <a target="_blank" rel="noopener" href="https://github.com/chaooo/hexo-theme-BlueLake.git">https://github.com/chaooo/hexo-theme-BlueLake.git</a> themes&#x2F;BlueLake</p>
 
-        
-            <div id="toc-article">
-                
-  <div class="widget-wrap" id="toc-wrap">
-    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
-    <div class="widget">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="toc-text">常用操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="toc-text">配置信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8E%E4%B8%8B%E8%BD%BD"><span class="toc-text">文件上传与下载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93%E5%88%86%E6%94%AF"><span class="toc-text">创建仓库分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%8B%E9%9A%86%E4%BB%A3%E7%A0%81%E5%88%B0%E6%9C%AC%E5%9C%B0"><span class="toc-text">克隆代码到本地</span></a></li></ol></li></ol>
-    </div>
-  </div>
-
-
-            </div>
-        
-        
-          <blockquote id="copyright">
-              <p>原文链接: <a href="https://erkeli.github.io/2023/03/29/git-command/">https://erkeli.github.io/2023/03/29/git-command/</a></p>
-              <p>版权声明: 转载请注明出处.</p>
-          </blockquote>
-        
       
     </div>
     <footer class="article-footer">
+      <a data-url="https://erkeli.github.io/2023/03/29/git-command/" data-id="clfuj04m10001ycvh5hp609e4" class="article-share-link">Share</a>
       
-        <div class="article-tag-wrap">
-          
-
-          
+      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git%E5%91%BD%E4%BB%A4/" rel="tag">git命令</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" rel="tag">基础命令</a></li></ul>
 
-          
-    <div class="social-share">
-      <span>分享到:</span>
-    </div>
-
-
-
-        </div>
-      
-      
-        
+    </footer>
+  </div>
+  
+    
 <nav id="article-nav">
   
-  
     <a href="/2023/03/29/md-grammer/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">newer</strong>
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           常用md语法
@@ -206,30 +135,51 @@
       </div>
     </a>
   
+  
 </nav>
 
-      
-      
-        
-
-
-
-
-
-
-
-
-      
-    </footer>
-  </div>
+  
 </article>
+
 </section>
         
           <aside id="sidebar">
   
     
+
+  
+    
   <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-posts"></i> 最新文章</h3>
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git%E5%91%BD%E4%BB%A4/" rel="tag">git命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/md%E8%AF%AD%E6%B3%95/" rel="tag">md语法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" rel="tag">基础命令</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">git命令</a> <a href="/tags/md%E8%AF%AD%E6%B3%95/" style="font-size: 10px;">md语法</a> <a href="/tags/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">基础命令</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">三月 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
         
@@ -245,106 +195,37 @@
     </div>
   </div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/git%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">git命令</a> <a href="/tags/md%E8%AF%AD%E6%B3%95/" style="font-size: 10px;">md语法</a> <a href="/tags/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">基础命令</a>
-    </div>
-  </div>
-
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-archive"></i> 归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023年</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git%E5%91%BD%E4%BB%A4/" rel="tag">git命令</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/md%E8%AF%AD%E6%B3%95/" rel="tag">md语法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" rel="tag">基础命令</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-link"></i> 友情链接</h3>
-    <div class="widget">
-      <ul>
-      
-        <li>
-          <a target="_blank" rel="noopener" href="http://www.example1.com/">site-name1</a>
-        </li>
-      
-        <li>
-          <a target="_blank" rel="noopener" href="http://www.example2.com/">site-name2</a>
-        </li>
-      
-        <li>
-          <a target="_blank" rel="noopener" href="http://www.example3.com/">site-name3</a>
-        </li>
-      
-      </ul>
-    </div>
-  </div>
-
-
   
 </aside>
         
       </div>
-      <a id="totop" href="#top"></a>
       <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      <p>
-        <a href="/sitemap.xml">网站地图</a>
-        <span> | </span><a href="/atom.xml">订阅本站</a>
-        <span> | </span><a href="/about/">联系博主</a>
-      </p>
-      
-        <p>
-          <i class="fa fa-visitors"></i>
-          <i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>
-          ，
-          <i class="fa fa-views"></i>
-          <i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>
-        </p>
-      
-      <p>
-        <span>Copyright &copy; 2023 李二科.</span>
-        <span>Theme by <a href="https://github.com/chaooo/hexo-theme-BlueLake/" target="_blank">BlueLake.</a></span>
-        <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo.</a></span>
-      </p>
+      &copy; 2023 李二科<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-
     </div>
-  </div>
+    <nav id="mobile-nav">
   
-<script src="/js/jquery-3.4.1.min.js"></script>
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
 
-
-<script src="/js/search.json.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
 
@@ -354,46 +235,6 @@
 
 
 
-
-
-  
-<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-  
-    
-<script src="/localshare/js/social-share.js"></script>
-
-    
-<script src="/localshare/js/qrcode.js"></script>
-
-  
-  
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-
-
-
-
+  </div>
 </body>
 </html>
